@@ -1,5 +1,7 @@
 const validator = require("../utils/addUserValidator");
 
+
+
 const validate = async (req, res, next) => {
   console.log("Parameters Validated");
 
@@ -8,7 +10,7 @@ const validate = async (req, res, next) => {
   else next();
 };
 
-module.exports = { validate };
+module.exports = { validate};
 
 
 

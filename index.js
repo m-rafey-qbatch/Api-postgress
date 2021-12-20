@@ -4,8 +4,7 @@ const app = require("./route");
 // Database
 const db = require("./config/database");
 
-let bodyParser = require("body-parser");
-app.use(bodyParser.json());
+
 
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));

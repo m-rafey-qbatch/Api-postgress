@@ -10,5 +10,15 @@ const schema = Joi.object({
 
   DOB: Joi.string(),
 });
-
 module.exports = schema;
+
+
+
+
+
+
+
+
+
+
+

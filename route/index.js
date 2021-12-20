@@ -6,9 +6,16 @@ let commentRoute=require('../controller/comments')
 let teacherRoute = require("../controller/teachers");
 let studentRoute=require('../controller/students')
 const express = require("express");
-
-
 const app = express();
+
+
+let bodyParser = require("body-parser");
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded())
+
+// parse application/json
+app.use(bodyParser.json())
 
 
 // Index route

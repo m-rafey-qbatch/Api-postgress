@@ -3,4 +3,4 @@ const auth = (req, res, next) => {
   next();
 };
 
-module.exports = { validate };
+module.exports = { auth };
